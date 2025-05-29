@@ -49,5 +49,20 @@ namespace DATOS
             sqlDataAdapter.Fill(dataSet, nombreTabla);
             return dataSet.Tables[nombreTabla];
         }
+
+        public int ObtenerMaximo(string nombreCampo, string nombreTabla)
+        {
+            string consultaSQL = $"SELECT ISNULL(MAX({nombreCampo}), 0) AS Maximo FROM {nombreTabla}";
+
+            DataTable tabla = ObtenerTabla(nombreTabla, consultaSQL);
+
+            if (tabla.Rows.Count > 0)
+            {
+                return Convert.ToInt32(tabla.Rows[0]["Maximo"]) + 1;
+            }
+
+            return 0; 
+        }
+
     }
 }
