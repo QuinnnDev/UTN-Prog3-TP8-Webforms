@@ -64,5 +64,19 @@ namespace DATOS
             return 0; 
         }
 
+        public int EjecProcedimAlmacenado (SqlCommand comandoSQL, string nombreProcedimientoAlmacenado)
+        {
+            int filasModificadas;
+            SqlConnection sqlConnection = ObtenerConexion();
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand = comandoSQL;
+            sqlCommand.Connection = sqlConnection;
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            sqlCommand.CommandText = nombreProcedimientoAlmacenado;
+            filasModificadas = sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            return filasModificadas;
+        }
+
     }
 }
