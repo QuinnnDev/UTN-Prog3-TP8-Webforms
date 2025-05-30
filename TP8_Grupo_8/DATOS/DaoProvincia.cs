@@ -9,7 +9,7 @@ using System.Data.Sql;
 
 namespace DATOS
 {
-    internal class DaoProvincia
+    public class DaoProvincia
     {
         AccesoDatos datos = new AccesoDatos();
 
