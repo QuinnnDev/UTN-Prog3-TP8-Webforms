@@ -36,7 +36,6 @@ namespace DATOS
 
         public int agregarSucursal(Sucursal suc)
         {
-            suc.IdSucursal = ds.ObtenerMaximo("Id_Sucursal", "Sucursal");
             SqlCommand comando = new SqlCommand();
             ArmarParametrosSucursalAgregar(ref comando, suc);
             return ds.EjecProcedimAlmacenado(comando, "spAgregarSucursal");
