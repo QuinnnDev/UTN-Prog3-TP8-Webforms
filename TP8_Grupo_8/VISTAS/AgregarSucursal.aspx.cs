@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using NEGOCIO;
+using ENTIDADES;
+
 namespace VISTAS
 {
 	public partial class AgregarSucursal : System.Web.UI.Page
