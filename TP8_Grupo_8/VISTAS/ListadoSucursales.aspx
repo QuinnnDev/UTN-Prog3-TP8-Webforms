@@ -127,7 +127,14 @@
                 <td>&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style5">
-                    <asp:GridView ID="gvSucursales" runat="server">
+                    <asp:GridView ID="gvSucursales" runat="server" AutoGenerateColumns="False">
+                        <Columns>
+                            <asp:BoundField DataField="Id_sucursal" HeaderText="Id_Sucursal" />
+                            <asp:BoundField DataField="NombreSucursal" HeaderText="Nombre" />
+                            <asp:BoundField DataField="DescripcionSucursal" HeaderText="Descripcion" />
+                            <asp:BoundField DataField="DescripcionProvincia" HeaderText="Provincia" />
+                            <asp:BoundField DataField="DireccionSucursal" HeaderText="Dirección" />
+                        </Columns>
                     </asp:GridView>
                 </td>
                 <td class="auto-style6">&nbsp;</td>
