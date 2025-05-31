@@ -78,5 +78,18 @@ namespace DATOS
             return filasModificadas;
         }
 
+        public Boolean Existe(String consulta)
+        {
+            Boolean estado = false;
+            SqlConnection Conexion = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand(consulta, Conexion);
+            SqlDataReader datos = cmd.ExecuteReader();
+            if (datos.Read())
+            {
+                estado = true;
+            }
+            return estado;
+        }
+
     }
 }

@@ -40,5 +40,15 @@ namespace DATOS
             ArmarParametrosSucursalAgregar(ref comando, suc);
             return ds.EjecProcedimAlmacenado(comando, "spAgregarSucursal");
         }
+        public Boolean existeSucursal(Sucursal suc)
+        {
+       
+            Sucursal sucu = new Sucursal();
+            AccesoDatos ds = new AccesoDatos();
+
+            String consulta = "Select * from Sucursales where NombreSucursal='" + suc.getNombreSucursal() + "'";
+            return ds.Existe(consulta);
+        }
+
     }
 }
