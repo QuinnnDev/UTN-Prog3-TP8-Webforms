@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using NEGOCIO;
 using ENTIDADES;
+using DATOS;
 
 namespace VISTAS
 {
@@ -22,5 +23,25 @@ namespace VISTAS
                 ddlProvincias.DataBind();
             }
 		}
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Sucursal newSucursal = new Sucursal();
+
+            DaoSucursal dao = new DaoSucursal();
+
+            newSucursal.setNombreSucursal(txtNombre.Text);
+            newSucursal.DescripcionSucursal = txtDescripcion.Text;
+            newSucursal.IdProvinciaSucursal = int.Parse(ddlProvincias.SelectedValue);
+            newSucursal.DireccionSucursal = txtDireccion.Text;
+            newSucursal.UrlImagen_Sucursal = "sin-imagen.png";
+
+
+            if (dao.existeSucursal(newSucursal) == false)
+            {
+                dao.agregarSucursal(newSucursal);
+            }
+          
+        }
     }
 }

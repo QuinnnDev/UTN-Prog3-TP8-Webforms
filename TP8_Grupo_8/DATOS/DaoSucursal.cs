@@ -46,7 +46,7 @@ namespace DATOS
             Sucursal sucu = new Sucursal();
             AccesoDatos ds = new AccesoDatos();
 
-            String consulta = "Select * from Sucursales where NombreSucursal='" + suc.getNombreSucursal() + "'";
+            String consulta = "Select * from Sucursal where NombreSucursal='" + suc.getNombreSucursal() + "'";
             return ds.Existe(consulta);
         }
 

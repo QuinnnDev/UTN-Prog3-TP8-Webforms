@@ -52,6 +52,17 @@
         .auto-style13 {
             height: 49px;
         }
+        .auto-style14 {
+            width: 77px;
+            height: 26px;
+        }
+        .auto-style15 {
+            width: 217px;
+            height: 26px;
+        }
+        .auto-style16 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -112,13 +123,13 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">Nombre Sucursal:</td>
-                    <td>
+                    <td class="auto-style14"></td>
+                    <td class="auto-style15">Nombre Sucursal:</td>
+                    <td class="auto-style16">
                         <asp:TextBox ID="txtNombre" runat="server" Width="200px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style16"></td>
+                    <td class="auto-style16"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
@@ -159,7 +170,7 @@
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>
-                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" />
+                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
