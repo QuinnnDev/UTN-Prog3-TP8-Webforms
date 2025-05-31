@@ -8,6 +8,7 @@ namespace ENTIDADES
 {
     public class Sucursal
     {
+        public int    IdSucursal            { get; set; }
         public String NombreSucursal        { get; set; }
         public String DescripcionSucursal   { get; set; }
         public int    IdHorarioSucursal     { get; set; }

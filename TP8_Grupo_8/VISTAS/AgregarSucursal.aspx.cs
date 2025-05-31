@@ -22,5 +22,5 @@ namespace VISTAS
                 ddlProvincias.DataBind();
             }
 		}
-	}
+    }
 }
