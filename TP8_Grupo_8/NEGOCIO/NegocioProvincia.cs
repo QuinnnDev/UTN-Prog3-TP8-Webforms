@@ -10,7 +10,7 @@ using DATOS;
 
 namespace NEGOCIO
 {
-    internal class NegocioProvincia
+    public class NegocioProvincia
     {
         public DataTable getTabla()
         {
