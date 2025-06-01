@@ -19,6 +19,21 @@
         .auto-style6 {
             width: 153px;
         }
+        .auto-style7 {
+            height: 23px;
+        }
+        .auto-style8 {
+            width: 243px;
+            height: 23px;
+        }
+        .auto-style9 {
+            width: 366px;
+            height: 23px;
+        }
+        .auto-style10 {
+            width: 153px;
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -107,21 +122,21 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style9"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style7"></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -129,11 +144,31 @@
                 <td class="auto-style5">
                     <asp:GridView ID="gvSucursales" runat="server" AutoGenerateColumns="False">
                         <Columns>
-                            <asp:BoundField DataField="Id_sucursal" HeaderText="Id_Sucursal" />
-                            <asp:BoundField DataField="NombreSucursal" HeaderText="Nombre" />
-                            <asp:BoundField DataField="DescripcionSucursal" HeaderText="Descripcion" />
-                            <asp:BoundField DataField="DescripcionProvincia" HeaderText="Provincia" />
-                            <asp:BoundField DataField="DireccionSucursal" HeaderText="Dirección" />
+                            <asp:TemplateField HeaderText="id_sucursal">
+                                <ItemTemplate>
+                                    <asp:Label ID="Id_sucu" runat="server" Text='<%# Bind("Id_Sucursal") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Nombre">
+                                <ItemTemplate>
+                                    <asp:Label ID="Nombre" runat="server" Text='<%# Bind("NombreSucursal") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Descripcion">
+                                <ItemTemplate>
+                                    <asp:Label ID="DescripcionSucursal" runat="server" Text='<%# Bind("DescripcionSucursal") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Provincia">
+                                <ItemTemplate>
+                                    <asp:Label ID="Id_ProvinciaSucursal" runat="server" Text='<%# Bind("Id_ProvinciaSucursal") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Direccion">
+                                <ItemTemplate>
+                                    <asp:Label ID="DireccionSucursal" runat="server" Text='<%# Bind("DireccionSucursal") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
                 </td>

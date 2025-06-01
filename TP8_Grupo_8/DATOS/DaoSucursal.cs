@@ -83,7 +83,7 @@ namespace DATOS
 
         public DataTable getTablaSucursales()
         {
-            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from Sucursales");
+            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from Sucursal");
             return tabla;
         }
 

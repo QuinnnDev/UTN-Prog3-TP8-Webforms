@@ -9,7 +9,7 @@ using ENTIDADES;
 
 namespace NEGOCIO
 {
-    class NegocioSucursal
+   public class NegocioSucursal
     {
         public bool agregarSucursal(String nombre)
         {

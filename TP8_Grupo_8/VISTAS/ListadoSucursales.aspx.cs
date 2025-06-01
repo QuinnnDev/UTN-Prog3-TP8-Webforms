@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.Sql;
+using System.Data;
+using NEGOCIO;
+using DATOS;
 
 namespace VISTAS
 {
@@ -11,6 +15,21 @@ namespace VISTAS
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if (!IsPostBack)
+			{
+				CargarGridView();
+
+			}
+
+			void CargarGridView()
+			{
+
+				NegocioSucursal sucu = new NegocioSucursal();
+				DataTable tablaSucursales = sucu.GetTabla();
+				gvSucursales.DataSource = tablaSucursales;
+				gvSucursales.DataBind();
+
+			}
 
 		}
 	}
