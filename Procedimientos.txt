@@ -1,3 +1,8 @@
+USE BDSucursales
+GO
+
+
+
 CREATE PROCEDURE spAgregarSucursal
     @NombreSucursal VARCHAR(100),
     @DescripcionSucursal VARCHAR(100),
