@@ -14,7 +14,7 @@
             width: 243px;
         }
         .auto-style5 {
-            width: 366px;
+            width: 407px;
         }
         .auto-style6 {
             width: 153px;
@@ -27,7 +27,7 @@
             height: 23px;
         }
         .auto-style9 {
-            width: 366px;
+            width: 407px;
             height: 23px;
         }
         .auto-style10 {
@@ -106,7 +106,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar Todo" />
+                    <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar Todo" OnClick="btnMostrarTodo_Click" />
                 </td>
                 <td class="auto-style6">&nbsp;</td>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>

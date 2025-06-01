@@ -15,22 +15,25 @@ namespace VISTAS
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			if (!IsPostBack)
-			{
-				CargarGridView();
-
-			}
-
-			void CargarGridView()
-			{
-
-				NegocioSucursal sucu = new NegocioSucursal();
-				DataTable tablaSucursales = sucu.GetTabla();
-				gvSucursales.DataSource = tablaSucursales;
-				gvSucursales.DataBind();
-
-			}
-
+            if (!IsPostBack)
+            {
+                CargarGridView();
+            }
 		}
-	}
+
+        void CargarGridView()
+        {
+
+            NegocioSucursal sucu = new NegocioSucursal();
+            DataTable tablaSucursales = sucu.GetTabla();
+            gvSucursales.DataSource = tablaSucursales;
+            gvSucursales.DataBind();
+
+        }
+
+        protected void btnMostrarTodo_Click(object sender, EventArgs e)
+        {
+            CargarGridView();
+        }
+    }
 }
