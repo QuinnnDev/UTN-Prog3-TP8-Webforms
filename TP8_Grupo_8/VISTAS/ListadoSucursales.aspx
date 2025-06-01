@@ -108,7 +108,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar Todo" OnClick="btnMostrarTodo_Click" />
                 </td>
-                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style6">
+                    <asp:Label ID="lblMensajeError" runat="server" ForeColor="#990000"></asp:Label>
+                </td>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

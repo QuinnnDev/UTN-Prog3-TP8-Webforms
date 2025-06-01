@@ -8,6 +8,7 @@ using System.Data.Sql;
 using System.Data;
 using NEGOCIO;
 using DATOS;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace VISTAS
 {
@@ -48,13 +49,19 @@ namespace VISTAS
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-
-            if(txtBuscarID.Text.Trim() != "")
+            if (txtBuscarID.Text.Trim() != "")
             {
-
-                FiltrarGridView();
-                txtBuscarID.Text = string.Empty;
-
+                int id;
+                if (int.TryParse(txtBuscarID.Text.Trim(), out id))
+                {
+                    FiltrarGridView();
+                    txtBuscarID.Text = string.Empty;
+                    lblMensajeError.Text = string.Empty;
+                }
+                else
+                {
+                    lblMensajeError.Text = "Por favor ingrese un número válido.";
+                }
             }
             else
             {
