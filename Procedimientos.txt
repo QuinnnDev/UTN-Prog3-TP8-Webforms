@@ -1,0 +1,26 @@
+CREATE PROCEDURE spAgregarSucursal
+    @NombreSucursal VARCHAR(100),
+    @DescripcionSucursal VARCHAR(100),
+    @Id_HorarioSucursal INT,
+    @Id_ProvinciaSucursal INT,
+    @DireccionSucursal VARCHAR(100),
+    @URL_Imagen_Sucursal VARCHAR(100)
+AS
+BEGIN
+    INSERT INTO Sucursal (
+        NombreSucursal,
+        DescripcionSucursal,
+        Id_HorarioSucursal,
+        Id_ProvinciaSucursal,
+        DireccionSucursal,
+        URL_Imagen_Sucursal
+    )
+    VALUES (
+        @NombreSucursal,
+        @DescripcionSucursal,
+        @Id_HorarioSucursal,
+        @Id_ProvinciaSucursal,
+        @DireccionSucursal,
+        @URL_Imagen_Sucursal
+    )
+END
