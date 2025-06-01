@@ -50,5 +50,11 @@ namespace DATOS
             return ds.Existe(consulta);
         }
 
+        public DataTable getTablaSucursales()
+        {
+            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from Sucursales");
+            return tabla;
+        }
+
     }
 }
