@@ -52,7 +52,8 @@ namespace VISTAS
             if(txtBuscarID.Text.Trim() != "")
             {
 
-                //FiltrarGridView();
+                FiltrarGridView();
+                txtBuscarID.Text = string.Empty;
 
             }
             else
