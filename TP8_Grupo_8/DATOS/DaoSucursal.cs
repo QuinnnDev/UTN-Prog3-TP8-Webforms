@@ -34,6 +34,20 @@ namespace DATOS
             SqlParametros.Value = suc.UrlImagen_Sucursal;
         }
 
+        public Sucursal getSucursal(Sucursal suc)
+        {
+            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from sucursal where Id_Sucursal=" + suc.IdSucursal);
+            suc.IdSucursal =  (Convert.ToInt32(tabla.Rows[0][0].ToString()));
+            suc.NombreSucursal = (tabla.Rows[0][1].ToString());
+            suc.DescripcionSucursal = (tabla.Rows[0][2].ToString());
+            suc.IdHorarioSucursal = (Convert.ToInt32(tabla.Rows[0][3]));
+            suc.IdProvinciaSucursal = (Convert.ToInt32(tabla.Rows[0][4]));
+            suc.DireccionSucursal = (tabla.Rows[0][5].ToString());
+            suc.UrlImagen_Sucursal = (tabla.Rows[0][6].ToString());
+
+            return suc;
+        }
+
         public int agregarSucursal(Sucursal suc)
         {
             SqlCommand comando = new SqlCommand();
