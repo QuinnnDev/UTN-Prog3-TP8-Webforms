@@ -34,21 +34,22 @@ namespace DATOS
             SqlParametros.Value = suc.UrlImagen_Sucursal;
         }
 
-        public Sucursal getSucursal(int id)
+        public DataTable getSucursal(int id)
         {
 
             Sucursal suc = new Sucursal(); 
 
             DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from sucursal where Id_Sucursal=" + id);
-            suc.IdSucursal = (Convert.ToInt32(tabla.Rows[0][0].ToString()));
-            suc.NombreSucursal = (tabla.Rows[0][1].ToString());
-            suc.DescripcionSucursal = (tabla.Rows[0][2].ToString());
-            suc.IdHorarioSucursal = (Convert.ToInt32(tabla.Rows[0][3]));
-            suc.IdProvinciaSucursal = (Convert.ToInt32(tabla.Rows[0][4]));
-            suc.DireccionSucursal = (tabla.Rows[0][5].ToString());
-            suc.UrlImagen_Sucursal = (tabla.Rows[0][6].ToString());
 
-            return suc;
+            //suc.IdSucursal = (Convert.ToInt32(tabla.Rows[0][0].ToString()));
+            //suc.NombreSucursal = (tabla.Rows[0][1].ToString());
+            //suc.DescripcionSucursal = (tabla.Rows[0][2].ToString());
+            //suc.IdHorarioSucursal = (Convert.ToInt32(tabla.Rows[0][3]));
+            //suc.IdProvinciaSucursal = (Convert.ToInt32(tabla.Rows[0][4]));
+            //suc.DireccionSucursal = (tabla.Rows[0][5].ToString());
+            //suc.UrlImagen_Sucursal = (tabla.Rows[0][6].ToString());
+
+            return tabla;
         }
 
         public Sucursal getSucursal(Sucursal suc)

@@ -104,7 +104,7 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="txtBuscarID" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar Todo" OnClick="btnMostrarTodo_Click" />
                 </td>

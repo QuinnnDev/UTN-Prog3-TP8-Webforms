@@ -13,15 +13,7 @@ namespace VISTAS
 {
 	public partial class ListadoSucursales : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
-            if (!IsPostBack)
-            {
-                CargarGridView();
-            }
-		}
-
-        void CargarGridView()
+        private void CargarGridView()
         {
 
             NegocioSucursal sucu = new NegocioSucursal();
@@ -31,9 +23,47 @@ namespace VISTAS
 
         }
 
+        private void FiltrarGridView()
+        {
+            NegocioSucursal sucu = new NegocioSucursal();
+
+            DataTable tabla = sucu.getSucursalById(Convert.ToInt32(txtBuscarID.Text));
+            gvSucursales.DataSource = tabla;
+            gvSucursales.DataBind();
+        }
+
+		protected void Page_Load(object sender, EventArgs e)
+		{
+            if (!IsPostBack)
+            {
+                CargarGridView();
+            }
+		}
+
+
         protected void btnMostrarTodo_Click(object sender, EventArgs e)
         {
             CargarGridView();
         }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+
+            if(txtBuscarID.Text.Trim() != "")
+            {
+
+                //FiltrarGridView();
+
+            }
+            else
+            {
+                CargarGridView();
+            }
+
+
+        }
+
+
+
     }
 }

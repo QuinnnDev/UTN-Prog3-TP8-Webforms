@@ -29,7 +29,7 @@ namespace NEGOCIO
         }
 
 
-        public Sucursal getSucursalById(int id)
+        public DataTable getSucursalById(int id)
         {
             DaoSucursal dao = new DaoSucursal();
             return dao.getSucursal(id);
