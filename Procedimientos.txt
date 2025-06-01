@@ -29,3 +29,14 @@ BEGIN
         @URL_Imagen_Sucursal
     )
 END
+GO
+
+
+
+CREATE PROCEDURE spEliminarSucursal 
+@IdSucursal int
+AS
+BEGIN
+	DELETE FROM Sucursal WHERE Id_Sucursal = @IdSucursal
+END
+GO
