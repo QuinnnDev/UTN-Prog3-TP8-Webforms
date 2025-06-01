@@ -28,6 +28,13 @@ namespace NEGOCIO
                 return false;
         }
 
+
+        public Sucursal getSucursalById(int id)
+        {
+            DaoSucursal dao = new DaoSucursal();
+            return dao.getSucursal(id);
+        }
+
         public DataTable GetTabla(){ 
             DaoSucursal dao =new DaoSucursal();
             return dao.getTablaSucursales();
