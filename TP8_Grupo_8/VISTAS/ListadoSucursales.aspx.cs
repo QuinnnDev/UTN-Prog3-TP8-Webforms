@@ -39,6 +39,7 @@ namespace VISTAS
             {
                 CargarGridView();
             }
+
 		}
 
 
@@ -57,6 +58,7 @@ namespace VISTAS
                     FiltrarGridView();
                     txtBuscarID.Text = string.Empty;
                     lblMensajeError.Text = string.Empty;
+
                 }
                 else
                 {

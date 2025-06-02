@@ -19,7 +19,10 @@ namespace VISTAS
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            eliminarSucursal(Convert.ToInt32(tbxEliminarSucursal.Text));
+           bool filasAfectadas = eliminarSucursal(Convert.ToInt32(tbxEliminarSucursal.Text));
+
+           if (filasAfectadas){ lblMensaje.Text = "La transaccion fue exitosa";}
+           else{ lblMensaje.Text = "ocurrio un error"; }
         }
 
         private bool eliminarSucursal(int ID)
