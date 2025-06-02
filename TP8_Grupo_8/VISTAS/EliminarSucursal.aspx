@@ -56,23 +56,23 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style2">
+                <td class="auto-style4"></td>
+                <td class="auto-style5">
                     <asp:Label ID="lblEliminarSucursal" runat="server" Font-Bold="True" Text="Eliminar Sucursal"></asp:Label>
                 </td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style6"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

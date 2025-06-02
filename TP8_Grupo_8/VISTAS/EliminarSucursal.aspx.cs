@@ -30,6 +30,7 @@ namespace VISTAS
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
                 lblMensaje.Text = "ocurrio un error";
             }
+            tbxEliminarSucursal.Text = string.Empty;
         }
 
         private bool eliminarSucursal(int ID)
