@@ -22,14 +22,12 @@ namespace VISTAS
 
         }
 
-        private void eliminarSucursal(int ID)
+        private bool eliminarSucursal(int ID)
         {
-            Sucursal suc = new Sucursal();
-            DaoSucursal ds = new DaoSucursal();
-
-            suc.IdSucursal = ID;
-
-            ds.eliminarSucursal(suc);        
+            NegocioSucursal ns = new NegocioSucursal();
+            int filasAfectadas = ns.eliminarSucursal(ID);
+            
+            return filasAfectadas > 0;
         }
     }
 }
