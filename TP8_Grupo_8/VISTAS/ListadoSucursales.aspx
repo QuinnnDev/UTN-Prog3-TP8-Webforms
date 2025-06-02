@@ -34,10 +34,37 @@
             width: 153px;
             height: 23px;
         }
+        .auto-style11 {
+            width: 26px;
+        }
+        .auto-style12 {
+            height: 23px;
+            width: 26px;
+        }
+        .auto-style13 {
+            height: 30px;
+        }
+        .auto-style14 {
+            width: 243px;
+            height: 30px;
+        }
+        .auto-style15 {
+            width: 407px;
+            height: 30px;
+        }
+        .auto-style16 {
+            width: 153px;
+            height: 30px;
+        }
+        .auto-style17 {
+            width: 26px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
         <table class="auto-style1">
             <tr>
                 <td>&nbsp;</td>
@@ -60,27 +87,30 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3" style="font-weight: 700">
+                <td class="auto-style13"></td>
+                <td class="auto-style14" style="font-weight: 700">
                     <asp:Label ID="lblTitulo" runat="server" Font-Size="X-Large" Text="Listado de Sucursales"></asp:Label>
                 </td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style15"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style13"></td>
+                <td class="auto-style17"></td>
             </tr>
+            </table>
+            <br />
+            <table class="auto-style1">
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
@@ -96,7 +126,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -121,7 +151,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7"></td>
@@ -138,7 +168,7 @@
                 <td class="auto-style7"></td>
                 <td class="auto-style7"></td>
                 <td class="auto-style7"></td>
-                <td class="auto-style7"></td>
+                <td class="auto-style12"></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -185,7 +215,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -202,7 +232,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -219,7 +249,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -236,112 +266,9 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
         </table>
-        <div>
         </div>
     </form>
 </body>

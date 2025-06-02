@@ -46,6 +46,8 @@ namespace VISTAS
         protected void btnMostrarTodo_Click(object sender, EventArgs e)
         {
             CargarGridView();
+            txtBuscarID.Text = string.Empty;
+            lblMensajeError.Text = string.Empty;
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)

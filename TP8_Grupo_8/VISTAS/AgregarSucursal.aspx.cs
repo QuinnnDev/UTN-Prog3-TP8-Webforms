@@ -26,6 +26,8 @@ namespace VISTAS
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+
+            lblMensajeResultado.Text = "";
             Sucursal newSucursal = new Sucursal();
 
             DaoSucursal dao = new DaoSucursal();
@@ -40,6 +42,18 @@ namespace VISTAS
             if (dao.existeSucursal(newSucursal) == false)
             {
                 dao.agregarSucursal(newSucursal);
+                txtNombre.Text = "";
+                txtDescripcion.Text = "";
+                txtDireccion.Text = "";
+                ddlProvincias.SelectedIndex = 0;
+
+                lblMensajeError.Text = "";
+                lblMensajeResultado.Text = "Se agrego con exito la sucursal";
+            }
+            else
+            {
+                lblMensajeResultado.Text = "";
+                lblMensajeError.Text = "La sucursal ya existe";
             }
           
         }

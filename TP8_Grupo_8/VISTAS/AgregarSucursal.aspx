@@ -63,6 +63,25 @@
         .auto-style16 {
             height: 26px;
         }
+        .auto-style17 {
+            height: 49px;
+            width: 256px;
+        }
+        .auto-style18 {
+            height: 74px;
+            width: 256px;
+        }
+        .auto-style19 {
+            height: 30px;
+            width: 256px;
+        }
+        .auto-style20 {
+            width: 256px;
+        }
+        .auto-style21 {
+            height: 26px;
+            width: 256px;
+        }
     </style>
 </head>
 <body>
@@ -78,7 +97,7 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td>
-                        <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~\AgregarSucursal.aspx">AgregarSucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~\AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
                     <td>
                         <asp:HyperLink ID="hlListadoSucursales" runat="server" NavigateUrl="~\ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
@@ -93,7 +112,7 @@
                 <tr>
                     <td class="auto-style11"></td>
                     <td class="auto-style12"></td>
-                    <td class="auto-style13"></td>
+                    <td class="auto-style17"></td>
                     <td class="auto-style13"></td>
                     <td class="auto-style13"></td>
                 </tr>
@@ -102,7 +121,7 @@
                     <td class="auto-style9">
                         <asp:Label ID="lblTitulo" runat="server" Font-Bold="True" Font-Size="20pt" Text="GRUPO N°8"></asp:Label>
                     </td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style18"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style10"></td>
                 </tr>
@@ -111,39 +130,43 @@
                     <td class="auto-style6">
                         <asp:Label ID="lblSubtitulo" runat="server" Font-Bold="True" Font-Size="18pt" Text="Agregar Sucursal"></asp:Label>
                     </td>
-                    <td class="auto-style7"></td>
+                    <td class="auto-style19"></td>
                     <td class="auto-style7"></td>
                     <td class="auto-style7"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style20">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style14"></td>
                     <td class="auto-style15">Nombre Sucursal:</td>
-                    <td class="auto-style16">
+                    <td class="auto-style21">
                         <asp:TextBox ID="txtNombre" runat="server" Width="200px"></asp:TextBox>
                     </td>
-                    <td class="auto-style16"></td>
+                    <td class="auto-style16">
+                        <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ErrorMessage="Falto llenar el campo Nombre Sucursal">*</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style16"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">Descripción:</td>
-                    <td>
+                    <td class="auto-style20">
                         <asp:TextBox ID="txtDescripcion" runat="server" Width="200px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Falto llenar el campo Descripcion">*</asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">Provincia:</td>
-                    <td>
+                    <td class="auto-style20">
                         <asp:DropDownList ID="ddlProvincias" runat="server" Height="16px" Width="207px">
                         </asp:DropDownList>
                     </td>
@@ -153,25 +176,48 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">Dirección</td>
-                    <td>
+                    <td class="auto-style20">
                         <asp:TextBox ID="txtDireccion" runat="server" Width="199px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
                     <td>
+                        <asp:RequiredFieldValidator ID="rfvDescripcion0" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Falto llenar el campo Descripcion">*</asp:RequiredFieldValidator>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style20">&nbsp;</td>
+                    <td>
+                        <asp:Label ID="lblMensajeResultado" runat="server" ForeColor="#669900"></asp:Label>
+                        <asp:Label ID="lblMensajeError" runat="server" ForeColor="#990000"></asp:Label>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style20">
                         <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
                     </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style20">
+                        &nbsp;</td>
+                    <td>
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style20">
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>

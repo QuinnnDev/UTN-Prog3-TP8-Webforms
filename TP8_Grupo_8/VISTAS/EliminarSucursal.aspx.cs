@@ -28,7 +28,7 @@ namespace VISTAS
             }
            else{ 
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
-                lblMensaje.Text = "ocurrio un error";
+                lblMensaje.Text = "No existe una sucursal con ese ID";
             }
             tbxEliminarSucursal.Text = string.Empty;
         }
