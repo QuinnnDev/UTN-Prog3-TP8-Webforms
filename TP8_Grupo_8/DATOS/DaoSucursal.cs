@@ -79,6 +79,13 @@ namespace DATOS
             ArmarParametrosSucursalAgregar(ref comando, suc);
             return ds.EjecProcedimAlmacenado(comando, "spAgregarSucursal");
         }
+
+        public int eliminarSucursal(Sucursal suc)
+        {
+            SqlCommand comando = new SqlCommand();
+            ArmarParametrosSucursalEliminar(ref comando, suc);
+            return ds.EjecProcedimAlmacenado(comando, "spEliminarSucursal");
+        }
         public Boolean existeSucursal(Sucursal suc)
         {
        
