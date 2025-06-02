@@ -19,7 +19,7 @@ namespace VISTAS
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            eliminarSucursal(Convert.ToInt32(tbxEliminarSucursal.Text));
         }
 
         private bool eliminarSucursal(int ID)
