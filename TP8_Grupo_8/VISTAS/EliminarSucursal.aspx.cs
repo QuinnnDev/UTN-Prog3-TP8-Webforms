@@ -14,6 +14,7 @@ namespace VISTAS
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            lblMensaje.ForeColor = System.Drawing.Color.Black;
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
@@ -22,12 +23,12 @@ namespace VISTAS
            bool filasAfectadas = eliminarSucursal(Convert.ToInt32(tbxEliminarSucursal.Text));
            
            if (filasAfectadas){ 
-                lblMensaje.Text = "Se ha eliminado correctamente";
                 lblMensaje.ForeColor = System.Drawing.Color.Green;
+                lblMensaje.Text = "Se ha eliminado correctamente";
             }
            else{ 
-                lblMensaje.Text = "ocurrio un error";
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
+                lblMensaje.Text = "ocurrio un error";
             }
         }
 
