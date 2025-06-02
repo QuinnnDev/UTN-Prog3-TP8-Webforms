@@ -16,7 +16,7 @@ namespace DATOS
         public void ArmarParametrosSucursalEliminar(ref SqlCommand Comando, Sucursal suc)
         {
             SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = Comando.Parameters.Add("@IDSUCURSARL", SqlDbType.Int);
+            SqlParametros = Comando.Parameters.Add("@IDSUCURSAL", SqlDbType.Int);
             SqlParametros.Value = suc.IdSucursal;
         }
         public void ArmarParametrosSucursalAgregar(ref SqlCommand Comando, Sucursal suc)

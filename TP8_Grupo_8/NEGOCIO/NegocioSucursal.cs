@@ -39,5 +39,19 @@ namespace NEGOCIO
             DaoSucursal dao =new DaoSucursal();
             return dao.getTablaSucursales();
         }
+
+        public int eliminarSucursal(int id)
+        {
+            int filasAfectadas = 0;
+
+            DaoSucursal dao = new DaoSucursal();
+
+            Sucursal suc = new Sucursal();
+            suc.IdSucursal = id;
+
+            filasAfectadas = dao.eliminarSucursal(suc);
+
+            return filasAfectadas;
+        }
     }
 }

@@ -66,7 +66,7 @@
                     <asp:TextBox ID="tbxEliminarSucursal" runat="server" Width="163px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
+                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
                 </td>
                 <td>
                     <asp:RegularExpressionValidator ID="revIDSucursal" runat="server" ControlToValidate="tbxEliminarSucursal" ErrorMessage="INGRESE UN NÚMERO" ForeColor="Red" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
