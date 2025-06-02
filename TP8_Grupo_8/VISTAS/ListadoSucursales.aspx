@@ -134,14 +134,15 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="txtBuscarID" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
+                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" ValidationGroup="1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar Todo" OnClick="btnMostrarTodo_Click" />
                 </td>
                 <td class="auto-style6">
                     <asp:Label ID="lblMensajeError" runat="server" ForeColor="#990000"></asp:Label>
                 </td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td>&nbsp;<asp:RequiredFieldValidator ID="rfvIDSucursal" runat="server" ControlToValidate="txtBuscarID" ForeColor="Red" ValidationGroup="1">Ingrese un número!</asp:RequiredFieldValidator>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

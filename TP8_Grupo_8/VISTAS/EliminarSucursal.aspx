@@ -10,12 +10,6 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 228px;
-        }
-        .auto-style3 {
-            width: 188px;
-        }
         .auto-style4 {
             height: 23px;
         }
@@ -26,9 +20,6 @@
         .auto-style6 {
             width: 188px;
             height: 23px;
-        }
-        .auto-style7 {
-            width: 49px;
         }
         .auto-style8 {
             height: 23px;
@@ -186,11 +177,13 @@
                     <asp:TextBox ID="tbxEliminarSucursal" runat="server" Width="163px"></asp:TextBox>
                 </td>
                 <td class="auto-style24">
-                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
+                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" ValidationGroup="1" />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RegularExpressionValidator ID="revIDSucursal" runat="server" ControlToValidate="tbxEliminarSucursal" ErrorMessage="Ingrese un número!" ForeColor="Red" ValidationExpression="^\d+$" ValidationGroup="1">*</asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rfvIDSucursal" runat="server" ControlToValidate="tbxEliminarSucursal" ErrorMessage="Ingrese un número!" ForeColor="Red" ValidationGroup="1">*</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style24">
-                    <asp:RegularExpressionValidator ID="revIDSucursal" runat="server" ControlToValidate="tbxEliminarSucursal" ErrorMessage="INGRESE UN NÚMERO" ForeColor="Red" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style24"></td>
                 <td class="auto-style24"></td>
                 <td class="auto-style24"></td>
@@ -223,7 +216,9 @@
             </tr>
             <tr>
                 <td class="auto-style8"></td>
-                <td class="auto-style5"></td>
+                <td class="auto-style5">
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="1" />
+                </td>
                 <td class="auto-style6"></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
